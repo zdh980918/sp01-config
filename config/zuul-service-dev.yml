@@ -1,6 +1,11 @@
 spring:
   application:
     name: zuul
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin
     
 server:
   port: 3001
@@ -16,7 +21,7 @@ zuul:
     user-service: /user-service/**
     order-service: /order-service/**
   retryable: true
-#zuul中默认启动了 ribbon 的负载均衡 但是没有启动重试  手动开启      
+#zuul涓粯璁ゅ惎鍔ㄤ簡 ribbon 鐨勮礋杞藉潎琛� 浣嗘槸娌℃湁鍚姩閲嶈瘯  鎵嬪姩寮�鍚�      
 ribbon:
   ConnectTimeout: 1000
   ReadTimeout: 1000
