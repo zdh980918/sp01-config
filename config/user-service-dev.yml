@@ -4,10 +4,11 @@ spring:
     
 server:  port: 8101
   
-# 自定义配置, 添加三个测试用用户: 7,8,9
+# 鑷畾涔夐厤缃�, 娣诲姞涓変釜娴嬭瘯鐢ㄧ敤鎴�: 7,8,9
 sp:
   user-service:
-    users: "[{\"id\":7, \"username\":\"abc\",\"password\":\"123\"},{\"id\":8, \"username\":\"def\",\"password\":\"456\"},{\"id\":9, \"username\":\"ghi\",\"password\":\"789\"}]"
+    users: "[{\"id\":7, \"username\":\"abc\",\"password\":\"123\"},{\"id\":8, \"username\":\"def\",\"password\":\"456\"},{\"id\":9, \"username\":\"ghi\",\"password\":\"789\"},{\"id\":99, \"username\":\"aaa\",\"password\":\"111\"}]"
+
 
 eureka:
   client:
